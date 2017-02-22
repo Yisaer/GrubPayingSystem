@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HighConcurrentGrub.iml" filepath="$PROJECT_DIR$/HighConcurrentGrub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seckill.iml" filepath="$PROJECT_DIR$/Seckill.iml" />
     </modules>
   </component>
 </project>

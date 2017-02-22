@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="HighConcurrentGrub" />
+        <module name="Seckill" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HighConcurrentGrub" target="1.5" />
+      <module name="Seckill" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
