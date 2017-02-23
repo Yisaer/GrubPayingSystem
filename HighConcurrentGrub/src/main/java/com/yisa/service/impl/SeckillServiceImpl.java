@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -28,10 +29,14 @@ import java.util.List;
  */
 @Service
 public class SeckillServiceImpl implements SeckillService {
+
+
+    private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     //日志对象
     private Logger logger= LoggerFactory.getLogger(this.getClass());
 
-    //加入一个混淆字符串(秒杀接口)的salt，为了我避免用户猜出我们的md5值，值任意给，越复杂越好
+    //加入一个混淆字符串(秒杀接口)的salt，
     private final String salt="jk~nkcasnc";
 
     //依赖注入
@@ -50,6 +55,7 @@ public class SeckillServiceImpl implements SeckillService {
 
 
     public List<Seckill> getSeckillList() {
+
         return seckillDao.queryAll(0,4);
     }
 
